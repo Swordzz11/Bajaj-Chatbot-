@@ -39,10 +39,6 @@ Bajaj Chatbot/
 ├── .env
 └── README.md
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 🧪 Setup Instructions
@@ -52,16 +48,9 @@ Edit
 git clone https://github.com/Swordzz11/bajaj-chatbot.git
 cd bajaj-chatbot
 ✅ 2. Install Dependencies
-bash
-Copy
-Edit
 pip install -r requirements.txt
 ✅ 3. Prepare Environment
 Create a .env file:
-
-env
-Copy
-Edit
 # For OpenAI fallback
 OPENAI_API_KEY=your_openai_key_here
 LLM_PROVIDER=openai
@@ -70,28 +59,19 @@ LLM_PROVIDER=openai
 # GOOGLE_API_KEY=your_gemini_api_key_here
 # LLM_PROVIDER=google
 ✅ 4. Embed Transcripts
-bash
-Copy
-Edit
 python scripts/load_transcripts.py
+
 💬 Run the Chatbot
+
 💻 CLI Interface
-bash
-Copy
-Edit
 set PYTHONPATH=.
 python cli_chat.py
+
 🌐 Web Interface
-bash
-Copy
-Edit
 streamlit run app.py
 Open browser at: http://localhost:8501
 
 🧠 Example Questions
-text
-Copy
-Edit
 What was the average stock price in Q1 FY25?
 Compare Bajaj Finserv performance between Jan 2024 and Mar 2024.
 Why is BAGIC facing headwinds in motor insurance?
