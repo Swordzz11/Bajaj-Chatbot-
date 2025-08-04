@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bajaj Finserv RAG Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>🤖 Bajaj Finserv Chatbot</h1>
+    <form method="post">
+        <textarea name="user_input" placeholder="Ask your question..." required></textarea>
+        <br>
+        <button type="submit">Send</button>
+    </form>
+
+    <div class="chat-box">
+        {% for sender, msg in chat_history %}
+            <div class="{{ 'user' if sender == 'You' else 'bot' }}">
+                <strong>{{ sender }}:</strong> {{ msg }}
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
